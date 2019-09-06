@@ -1,34 +1,25 @@
 {
   "name": "Voshod",
-  "version": "0.1.0",
+  "version": "16.0.0",
   "private": true,
-  "description": "Test task from htmlacademy",
+  "description": "Test task Voshod",
   "devDependencies": {
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
-    "del": "^4.1.0",
-    "gulp": "^4.0.1",
-    "gulp-csso": "^3.0.1",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^5.0.3",
+    "gulp": "4.0.x",
     "gulp-less": "4.0.x",
-    "gulp-lzmajs": "^1.2.1",
     "gulp-plumber": "1.2.x",
-    "gulp-postcss": "8.0.x",
-    "gulp-posthtml": "^3.0.4",
-    "gulp-rename": "^1.4.0",
     "gulp-sourcemaps": "2.6.x",
-    "gulp-uglify": "^3.0.2",
-    "gulp-webp": "^4.0.1",
-    "posthtml-include": "^1.2.0",
+    "gulp-postcss": "8.0.x",
+    "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "9.10.x",
-    "lodash.template": "^4.5.0"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/less/**/*.less\" --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp build",
+    "build": "gulp css",
     "start": "gulp start"
   },
   "browserslist": [
@@ -46,6 +37,5 @@
   ],
   "engines": {
     "node": "8.15"
-  },
-  "dependencies": {}
+  }
 }
