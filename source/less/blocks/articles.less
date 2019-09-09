@@ -3,6 +3,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center; 
+       
     }
     &__img {
         width: 350px;
@@ -16,7 +17,12 @@
     }
     &__title {
         font-weight: 600;
-        margin: 15px 0;
+        margin: 5px;
+        padding: 10px 5px;
+    }
+    &__time-wrap {
+        margin: 5px;
+        padding: 10px 5px;
     }
 }
 
@@ -24,15 +30,28 @@
 
 @media @tablet {
     .article{
+        &__img {
+            margin: 5px;
+        }
         &__wrap {
             margin: 0 auto;
-            max-width: 1220px;
+            max-width: 1220px;    
+            justify-content: center;        
         }
         &__img {
             transition: all ease 0.1s;
             &::hover {
                 transform: scale(1.01);
             }
+        }
+    }
+}
+/* Desktop */
+
+@media @desktop {
+    .article {
+        &__wrap {
+            justify-content: space-between;
         }
     }
 }
