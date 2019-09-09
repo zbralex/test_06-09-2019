@@ -5,11 +5,34 @@
         justify-content: center; 
     }
     &__img {
-        max-width: 350px;
+        width: 350px;
         margin: 10px;
+        background-color: @bg;
     }
     &__pic{
         width: 100%;
-        
+        max-height: 250px;
+        object-fit: cover;
+    }
+    &__title {
+        font-weight: 600;
+        margin: 15px 0;
+    }
+}
+
+/*  Tablets */
+
+@media @tablet {
+    .article{
+        &__wrap {
+            margin: 0 auto;
+            max-width: 1220px;
+        }
+        &__img {
+            transition: all ease 0.1s;
+            &::hover {
+                transform: scale(1.01);
+            }
+        }
     }
 }
