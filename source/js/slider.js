@@ -14,6 +14,10 @@ function sliderToggler(evt){
             slider.style.transform = 'translateX(' + (- evt.clientX / 10 ) + 'px)' ;
             slider.style.transition = 'all ease-in-out .3s';
             console.log(evt, evt.currentTarget);
+
+            if(evt.clientX > 900) {
+                slider.style.transform = 'translateX(' + (- evt.clientX ) + 'px)' ;
+            }
         }) 
     }
 
